@@ -1,0 +1,10 @@
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\obj\Debug\ZnakeGame.csprojAssemblyReference.cache
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\obj\Debug\ZnakeGame.Form1.resources
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\obj\Debug\ZnakeGame.Properties.Resources.resources
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\obj\Debug\ZnakeGame.csproj.GenerateResource.cache
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\obj\Debug\ZnakeGame.csproj.CoreCompileInputs.cache
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\bin\Debug\ZnakeGame.exe.config
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\bin\Debug\ZnakeGame.exe
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\bin\Debug\ZnakeGame.pdb
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\obj\Debug\ZnakeGame.exe
+C:\Users\ida.dahlqvist\Documents\GitHub\Snake\ZnakeGame\obj\Debug\ZnakeGame.pdb
