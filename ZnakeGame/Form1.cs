@@ -26,6 +26,7 @@ namespace ZnakeGame
             new Settings();
 
             //The timers settings
+            //NOTE: Hur fort vet blir en "ny bild", kan ses som hastigheten
             gameTimer.Interval = 1000 / Settings.Speed;
             //Linking updateScreen funtion to the timer
             gameTimer.Tick += updateScreen;
@@ -132,12 +133,12 @@ namespace ZnakeGame
                     if(i == 0)
                     {
                         //Making the head of the snake black
-                        snakeColour = Brushes.Black;
+                        snakeColour = Brushes.Purple;
                     }
                     else
                     {
                         //Making the body of the snake green
-                        snakeColour = Brushes.Green;
+                        snakeColour = Brushes.LightBlue;
                     }
                     //"Draws" the snakes body and head
                     canvas.FillEllipse(snakeColour, new Rectangle(
