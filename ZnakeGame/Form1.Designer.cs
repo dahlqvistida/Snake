@@ -33,7 +33,7 @@ namespace ZnakeGame
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this._label3 = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.pbCanvas = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).BeginInit();
@@ -61,17 +61,17 @@ namespace ZnakeGame
             this.label2.Text = "00";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // _label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.MistyRose;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Crimson;
-            this.label3.Location = new System.Drawing.Point(153, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 29);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "End Text";
+            this._label3.AutoSize = true;
+            this._label3.BackColor = System.Drawing.Color.MistyRose;
+            this._label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._label3.ForeColor = System.Drawing.Color.Crimson;
+            this._label3.Location = new System.Drawing.Point(153, 227);
+            this._label3.Name = "_label3";
+            this._label3.Size = new System.Drawing.Size(117, 29);
+            this._label3.TabIndex = 3;
+            this._label3.Text = "End Text";
             // 
             // pbCanvas
             // 
@@ -89,7 +89,7 @@ namespace ZnakeGame
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(907, 623);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this._label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbCanvas);
@@ -118,7 +118,7 @@ namespace ZnakeGame
         private System.Windows.Forms.PictureBox pbCanvas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label _label3;
         private System.Windows.Forms.Timer gameTimer;
     }
 }

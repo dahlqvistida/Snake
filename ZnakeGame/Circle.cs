@@ -13,11 +13,6 @@ namespace ZnakeGame
         public int X { get; set; }
         public int Y { get; set; }
 
-        //resetting X and Y to 0
-        public Circle()
-        {
-            X = 0;
-            Y = 0;
-        }
+   
     }
 }

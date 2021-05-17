@@ -41,17 +41,17 @@ namespace ZnakeGame
         private void startGame()
         {
             //Makes the lable3 (GameOver) test invisible
-            label3.Visible = false;
+            _label3.Visible = false;
 
-            //"Restarts" the settings
+            //Links to the Class settings
             new Settings();
 
             //Clear the previous snake body
             Snake.Clear();
 
-            //Creating a new snake head
-            Circle head = new Circle { X = 10, Y = 5 };
-            //Adding it to the snake array
+            //Creating a new snake head on row 7 and column 10
+            Circle head = new Circle { X = 7, Y = 10 };
+            //Adding the first Circle (head) to the snake list
             Snake.Add(head);
 
 
@@ -124,21 +124,26 @@ namespace ZnakeGame
             {
                 //Creating a Brush for the snake so the color of it can be set.
                 //NOTE: Brush makes it possible to fill things with color
-                Brush snakeColour; 
+                Brush snakeColour;
 
 
-                for(int i = 0; i < Snake.Count; i++)
+                for (int i = 0; i < Snake.Count; i++)
                 {
                     //Color the diffrent parts of the snake
-                    if(i == 0)
+                    if (i == 0)
                     {
                         //Making the head of the snake black
-                        snakeColour = Brushes.Purple;
+                        snakeColour = Brushes.DarkCyan;
                     }
+                    //If the circle is an even number it gets the color green
+                    else if (i % 2 == 0)
+                    {
+                        snakeColour = Brushes.LightGreen;
+                    }
+                    //If the circle is an uneven number it gets the color pink
                     else
                     {
-                        //Making the body of the snake green
-                        snakeColour = Brushes.LightBlue;
+                        snakeColour = Brushes.LightPink;
                     }
                     //"Draws" the snakes body and head
                     canvas.FillEllipse(snakeColour, new Rectangle(
@@ -162,8 +167,8 @@ namespace ZnakeGame
             {
                 //Will show the GameOver text to the player, and the players score
                 string gameOver = "Game Over \n" + "Final Score is " + Settings.Score + "\n Press enter to Restart \n";
-                label3.Text = gameOver;
-                label3.Visible = true;
+                _label3.Text = gameOver;
+                _label3.Visible = true;
             }
         }
         private void movePlayer()
